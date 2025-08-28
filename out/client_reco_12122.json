@@ -1,0 +1,140 @@
+{
+  "client_id": 12122,
+  "client_info": {
+    "REF_PERSONNE": 12122,
+    "RAISON_SOCIALE": "Societe_000001",
+    "LIB_SECTEUR_ACTIVITE": "SERVICES PERSONNELS",
+    "LIB_PRODUIT": null,
+    "Profils_cibles": null
+  },
+  "recommendations": [
+    {
+      "product": "ASSISTANCE DOMICILIAIRE",
+      "branch": "RISQUES DIVERS",
+      "score": 0.2687,
+      "breakdown": {
+        "relevance_score": 0.4438433349132538,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.02,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    },
+    {
+      "product": "R.C GARDERIE ET JARDIN D ENFANTS",
+      "branch": "RISQUES DIVERS",
+      "score": 0.2534,
+      "breakdown": {
+        "relevance_score": 0.39837950468063354,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.12,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    },
+    {
+      "product": "R.C PROFESSION CULINAIRE",
+      "branch": "RISQUES DIVERS",
+      "score": 0.2533,
+      "breakdown": {
+        "relevance_score": 0.406196653842926,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.08,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    },
+    {
+      "product": "RC ASSOCIATION SPORTIVES",
+      "branch": "RISQUES DIVERS",
+      "score": 0.2523,
+      "breakdown": {
+        "relevance_score": 0.40854716300964355,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.06,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    },
+    {
+      "product": "RESPONSABILITE CIVILE",
+      "branch": "RISQUES DIVERS",
+      "score": 0.2494,
+      "breakdown": {
+        "relevance_score": 0.3757266104221344,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.2,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    },
+    {
+      "product": "R.C MEDECIN",
+      "branch": "RISQUES DIVERS",
+      "score": 0.245,
+      "breakdown": {
+        "relevance_score": 0.39636531472206116,
+        "branch_match_score": 0.0,
+        "cross_sell_score": 0.0,
+        "profitability_score": 0.06,
+        "fit_score": 0.0,
+        "weights": {
+          "relevance": 0.6,
+          "branch": 0.08,
+          "cross_sell": 0.05,
+          "profitability": 0.12,
+          "fit": 0.15
+        }
+      },
+      "reason_snippets": []
+    }
+  ],
+  "metrics": {
+    "avg_score": 0.2536833333333333,
+    "num_candidates": 30,
+    "top_k": 6,
+    "branch_distribution": {
+      "RISQUES DIVERS": 6
+    }
+  }
+}

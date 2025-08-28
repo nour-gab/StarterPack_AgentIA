@@ -1,0 +1,12 @@
+{
+  "client_id": 12122,
+  "client_profile": {
+    "REF_PERSONNE": 12122,
+    "RAISON_SOCIALE": "Societe_000001",
+    "LIB_SECTEUR_ACTIVITE": "SERVICES PERSONNELS",
+    "LIB_PRODUIT": null,
+    "Profils_cibles": null
+  },
+  "top_recommendations": [],
+  "all_scores_count": 0
+}

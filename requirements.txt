@@ -1,0 +1,11 @@
+pandas
+#sqlite
+sqlalchemy
+pdfplumber
+PyPDF2
+sentence-transformers
+scikit-learn
+fastapi
+uvicorn
+streamlit
+requests
