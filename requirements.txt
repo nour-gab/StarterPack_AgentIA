@@ -9,3 +9,5 @@ fastapi
 uvicorn
 streamlit
 requests
+python-Levenshtein 
+fuzzywuzzy
