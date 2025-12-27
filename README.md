@@ -74,10 +74,10 @@ Core libraries (see `requirements.txt`):
 - `scikit-learn` - Machine learning utilities
 - `fastapi` / `uvicorn` - API framework
 - `streamlit` - Web interface
-- `python-Levenshtein` / `fuzzywuzzy` - Fuzzy string matching
 - `requests` - HTTP client
+- `python-Levenshtein` / `fuzzywuzzy` - Fuzzy string matching
 
-Note: LangChain dependencies (langchain, langchain-groq) are used in the code but need to be added to requirements.txt
+Note: LangChain dependencies (langchain, langchain-groq, python-dotenv) are used in the code but need to be added to requirements.txt
 
 ## 🚀 Usage
 
