@@ -17,12 +17,13 @@ An intelligent insurance recommendation system that combines SQL analysis, RAG (
 
 ## 🏗️ Architecture
 
-The system consists of four main components:
+The system consists of five main components:
 
 1. **ETL Pipeline** (`etl.py`): Data ingestion from Excel files into SQLite database
 2. **SQL Analyzer** (`sql_analyzer.py`): Natural language query interface powered by Groq LLM
 3. **RAG Recommender** (`rag_recommender.py`): Document analysis and recommendation engine
 4. **Orchestrator** (`orchestrator.py`): Pipeline coordination for end-to-end client analysis
+5. **Pitching Bot** (`pitching_bot.py`): Pitch generation module (to be implemented)
 
 ## 📋 Prerequisites
 
@@ -41,6 +42,11 @@ The system consists of four main components:
 2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
+   ```
+   
+   **Note**: Some additional dependencies used by the code need to be installed manually:
+   ```bash
+   pip install langchain langchain-groq python-dotenv
    ```
 
 3. **Set up environment variables**
@@ -68,8 +74,10 @@ Core libraries (see `requirements.txt`):
 - `scikit-learn` - Machine learning utilities
 - `fastapi` / `uvicorn` - API framework
 - `streamlit` - Web interface
-- `langchain` / `langchain-groq` - LLM integration
-- `fuzzywuzzy` / `python-Levenshtein` - Fuzzy string matching
+- `python-Levenshtein` / `fuzzywuzzy` - Fuzzy string matching
+- `requests` - HTTP client
+
+Note: LangChain dependencies (langchain, langchain-groq) are used in the code but need to be added to requirements.txt
 
 ## 🚀 Usage
 
@@ -109,23 +117,22 @@ StarterPack_AgentIA/
 │   ├── etl.py                 # Data ingestion pipeline
 │   ├── sql_analyzer.py        # NL to SQL converter with Groq LLM
 │   ├── rag_recommender.py     # RAG-based recommendation engine
-│   ├── pitching_bot.py        # Pitch generation module
+│   ├── pitching_bot.py        # Pitch generation module (to be implemented)
 │   └── orchestrator.py        # Pipeline orchestration
 ├── data/
 │   ├── Données_Assurance_S2.1.xlsx           # Client data
 │   ├── Description des colonnes-thématique 2.xlsx  # Column descriptions
 │   ├── Mapping produits vs profils_cibles.xlsx     # Product-profile mapping
 │   ├── Description_garanties.xlsx             # Coverage descriptions
-│   ├── api_next.postman_collection.json       # API documentation
 │   └── Conditions Générales/                  # Insurance policy PDFs
 │       ├── 4-CG-IARD/                        # Property insurance docs
 │       └── 5-CG-Engineering/                 # Engineering insurance docs
 ├── db/
 │   └── insurance.db           # SQLite database (generated)
-├── output/                    # Generated reports
-├── logs/                      # Interaction logs
+├── out/                       # Output directory
+├── output/                    # Generated reports (created at runtime)
 ├── requirements.txt           # Python dependencies
-├── docker-compose.yml         # Docker configuration
+├── docker-compose.yml         # Docker configuration (to be configured)
 └── README.md                  # This file
 ```
 
@@ -204,7 +211,7 @@ The system generates two types of reports for each client:
 
 ## 🐳 Docker Support
 
-Docker Compose configuration is available in `docker-compose.yml` for containerized deployment.
+Docker Compose configuration file is present but needs to be configured for containerized deployment.
 
 ## 🤝 Contributing
 
